@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo" data-tooltip="Dashboard Logo">MyDash</h2>
+      <ul class="nav">
+        <li><a href="#" data-tooltip="Go to Dashboard">🏠 Dashboard</a></li>
+        <li><a href="#" data-tooltip="Manage Users">👤 Users</a></li>
+        <li><a href="#" data-tooltip="View Analytics">📊 Analytics</a></li>
+        <li><a href="#" data-tooltip="Adjust Settings">⚙️ Settings</a></li>
+        <li><a href="#" data-tooltip="Logout safely">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <!-- Header -->
+      <header class="header">
+        <input type="text" placeholder="Search..." data-tooltip="Search users, data, etc.">
+
+        <div class="actions">
+          <div class="profile" data-tooltip="Your profile & notifications">
+            <span>🔔</span>
+            <img src="https://i.pravatar.cc/40" alt="profile">
+            <p>Aditya</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cards -->
+      <section class="cards">
+        <div class="card" data-tooltip="Number of registered users">
+          <h3>Total Users</h3>
+          <p>1,245</p>
+        </div>
+        <div class="card" data-tooltip="Total revenue this month">
+          <h3>Revenue</h3>
+          <p>$58,300</p>
+        </div>
+        <div class="card" data-tooltip="New orders received">
+          <h3>New Orders</h3>
+          <p>320</p>
+        </div>
+        <div class="card" data-tooltip="Unread messages">
+          <h3>Messages</h3>
+          <p>72</p>
+        </div>
+
+        <!-- Multi-Task Progress Bar Card -->
+        <div class="card">
+          <h3>Task Progress</h3>
+
+          <div class="task">
+            <p>UI Design</p>
+            <div class="progress">
+              <div class="progress-bar blue" style="width: 80%;" data-tooltip="UI Design progress">80%</div>
+            </div>
+          </div>
+
+          <div class="task">
+            <p>Frontend Development</p>
+            <div class="progress">
+              <div class="progress-bar green" style="width: 65%;" data-tooltip="Frontend Development progress">65%</div>
+            </div>
+          </div>
+
+          <div class="task">
+            <p>Backend Integration</p>
+            <div class="progress">
+              <div class="progress-bar orange" style="width: 40%;" data-tooltip="Backend Integration progress">40%</div>
+            </div>
+          </div>
+
+          <div class="task">
+            <p>Testing</p>
+            <div class="progress">
+              <div class="progress-bar red" style="width: 25%;" data-tooltip="Testing progress">25%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Circular Progress Card -->
+        <div class="card progress-circle-card" data-tooltip="Overall project completion">
+          <h3>Overall Completion</h3>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle">75%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chart + Table -->
+      <section class="content">
+        <div class="chart" data-tooltip="Sales performance overview">
+          <h3>Sales Overview</h3>
+          <div class="chart-box">📈 Chart Placeholder</div>
+        </div>
+        <div class="table" data-tooltip="List of recently joined users">
+          <h3>Recent Users</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aman Gupta</td>
+                <td>aman@example.com</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Sneha Verma</td>
+                <td>sneha@example.com</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Ravi Kumar</td>
+                <td>ravi@example.com</td>
+                <td>Inactive</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
